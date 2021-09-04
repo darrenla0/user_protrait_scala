@@ -7,3 +7,9 @@
 2021-09-04 21:12:16  [ main:1 ] - [ DEBUG ]  This is debug message.
 2021-09-04 21:12:16  [ main:3 ] - [ INFO ]  This is info message.
 2021-09-04 21:12:16  [ main:4 ] - [ ERROR ]  This is error message.
+2021-09-04 22:35:22  [ main:0 ] - [ DEBUG ]  This is debug message.
+2021-09-04 22:35:22  [ main:3 ] - [ INFO ]  This is info message.
+2021-09-04 22:35:22  [ main:35 ] - [ ERROR ]  This is error message.
+2021-09-04 22:35:45  [ main:0 ] - [ DEBUG ]  This is debug message.
+2021-09-04 22:35:45  [ main:3 ] - [ INFO ]  This is info message.
+2021-09-04 22:35:45  [ main:3 ] - [ ERROR ]  This is error message.
