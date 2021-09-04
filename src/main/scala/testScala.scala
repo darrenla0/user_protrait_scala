@@ -3,6 +3,7 @@ import org.apache.log4j.Logger;
 object testScala {
 
   private val logger = Logger.getLogger(testScala.getClass);
+  //private val testjava = new testjava();
 
   def main(args: Array[String]): Unit = {
     println("scala test is successful!")
@@ -12,7 +13,9 @@ object testScala {
     logger.info("This is info message.")
     // 记录error级别的信息
     logger.error("This is error message.")
-    println(add(1,6))
+    println(addScala(1,6))
+    //scala对象调用java方法
+    println(testjava.addJava(2,8))
   }
 
   /**
@@ -22,7 +25,7 @@ object testScala {
    * @Param [a, b]
    * @Return int
    **/
-  def add(a:Int,b:Int):Int={
+  def addScala(a:Int,b:Int):Int={
     return a+b;
   }
 
