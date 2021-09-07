@@ -1,6 +1,5 @@
 package com.wrodcount
 
-import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
 
 /**
@@ -19,17 +18,16 @@ object WordCount_Spark {
    * @Return void
    **/
   def main(args: Array[String]): Unit = {
-    /*
-    if (args.length != 1){
+
+    if (args.length <= 0){
       System.err.println("please input data args")
       System.exit(1)
     }
-     */
 
     val sparkConf = new SparkConf().setMaster("local[2]").setAppName("wordCount_Spark")
     val sc = new SparkContext(sparkConf)
-    val arr = Array("scala","java","scala","spark","haddop","spark","spark")
-    val arr_rdd = sc.makeRDD(arr)
+    //val arr = Array("scala","java","scala","spark","haddop","spark","spark")
+    val arr_rdd = sc.makeRDD(args)
     val words = arr_rdd.flatMap(_.split(" ")).filter(stop_words(_)).map((_,1))
     val result = words.reduceByKey(_+_).sortBy(_._2,false).collect().foreach(println(_))
 
