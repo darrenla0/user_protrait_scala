@@ -28,5 +28,15 @@ object testScala {
   def addScala(a:Int,b:Int):Int={
     return a+b;
   }
-
+  
+  /**
+   * @Author: liuminghui
+   * @Description: //TODO 
+   * @Date: 19:00 2021/9/7
+   * @Param [a, b]
+   * @Return int
+   **/
+  def subScala(a:Int,b:Int):Int={
+    return a-b
+  }
 }
