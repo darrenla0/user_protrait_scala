@@ -29,5 +29,4 @@ object testScala {
     return a+b;
   }
 
-
 }
