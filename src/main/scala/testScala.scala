@@ -29,8 +29,4 @@ object testScala {
     return a+b;
   }
 
-  //test git
-  //test git
-  //test git
-  //test git
 }
