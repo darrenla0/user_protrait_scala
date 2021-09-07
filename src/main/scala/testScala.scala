@@ -1,4 +1,5 @@
-import org.apache.log4j.Logger;
+import org.apache.log4j.Logger
+import org.apache.spark.SparkContext;
 
 object testScala {
 
@@ -16,6 +17,8 @@ object testScala {
     println(addScala(1,6))
     //scala对象调用java方法
     println(testjava.addJava(2,8))
+
+    val sc = SparkContext
   }
 
   /**
@@ -39,4 +42,6 @@ object testScala {
   def subScala(a:Int,b:Int):Int={
     return a-b
   }
+
+
 }
