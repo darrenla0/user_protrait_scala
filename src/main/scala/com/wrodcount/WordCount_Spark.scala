@@ -1,6 +1,7 @@
 package com.wrodcount
 
 import org.apache.spark.{SparkConf, SparkContext}
+import util.ParamsUtil
 
 /**
  * @ClassName WordCount_Spark
@@ -24,7 +25,7 @@ object WordCount_Spark {
       System.exit(1)
     }
 
-    val sparkConf = new SparkConf().setMaster("local[2]").setAppName("wordCount_Spark")
+    val sparkConf = new SparkConf().setMaster(ParamsUtil.spark.SPARK_MASTER).setAppName(ParamsUtil.spark.SPARK_APPNAME)
     val sc = new SparkContext(sparkConf)
     //val arr = Array("scala","java","scala","spark","haddop","spark","spark")
     val arr_rdd = sc.makeRDD(args)

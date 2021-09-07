@@ -11,6 +11,18 @@ object ParamsUtil {
 
   /**
    * @Author: liuminghui
+   * @Description: //spark配置参数
+   * @Date: 21:41 2021/9/7
+   * @Param
+   * @Return
+   **/
+  object spark{
+    val SPARK_MASTER="local[2]"
+    val SPARK_APPNAME="wordcount_spark"
+  }
+
+  /**
+   * @Author: liuminghui
    * @Description: //kafka配置参数
    * @Date: 20:26 2021/9/7
    * @Param
