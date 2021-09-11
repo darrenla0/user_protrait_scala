@@ -5,7 +5,7 @@ import util.ParamsUtil
 
 /**
  * @ClassName WordCount_Spark
- * @Description spark计算wordcount
+ * @Description spark计算wordcount for mac test
  * @Author lau
  * @Date 2021/9/7 20:27
  * @Version 1.0
@@ -13,7 +13,7 @@ import util.ParamsUtil
 object WordCount_Spark {
   /**
    * @Author: liuminghui
-   * @Description: //计算单词统计
+   * @Description: //计算单词统计 for mac test
    * @Date: 20:45 2021/9/7
    * @Param [args]
    * @Return void
